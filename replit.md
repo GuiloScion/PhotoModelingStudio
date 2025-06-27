@@ -108,6 +108,10 @@ This is an advanced 3D modeling application built as a web-based CAD/3D modeling
   - Integrated export functionality for multiple 3D formats
   - Added boolean operations and advanced material editing
   - Application successfully deployed and tested
+- June 26, 2025. Fixed Vercel deployment configuration
+  - Resolved serverless function crashes by simplifying deployment to static site
+  - Updated vercel.json for proper frontend asset serving
+  - Fixed gray screen issue with optimized build configuration
 
 ## User Preferences
 
