@@ -1,8 +1,8 @@
-# 3D Modeling Studio
+# 3D Scanner and Visualizer
 
 ## Overview
 
-This is an advanced 3D modeling application built as a web-based CAD/3D modeling studio with photogrammetry capabilities. The application allows users to create, manipulate, and export 3D models while providing professional-grade modeling tools and a photo-to-3D conversion feature.
+This is a streamlined 3D scanning and visualization application focused on photo-to-3D conversion and model viewing. The application allows users to upload photos, convert them to 3D models using photogrammetry, visualize the results, and export models in various formats. The interface is simplified for easy use with view-only 3D display.
 
 ## System Architecture
 
@@ -42,11 +42,10 @@ This is an advanced 3D modeling application built as a web-based CAD/3D modeling
 - **Quality Control**: Configurable processing parameters and confidence metrics
 
 ### User Interface
-- **Tool Panel**: Comprehensive modeling tools with keyboard shortcuts
-- **Properties Panel**: Real-time object property editing
-- **Scene Hierarchy**: Tree view of scene objects with visibility and lock controls
-- **File Manager**: Project management, photo upload, and export functionality
-- **Viewport**: 3D scene rendering with camera controls and grid overlay
+- **Photo Upload Tab**: Upload and process multiple photos for 3D reconstruction
+- **Export Tab**: Export 3D models in various formats (STL, OBJ, GLTF, PLY, FBX)
+- **3D Viewport**: View-only 3D scene rendering with camera controls and grid overlay
+- **Simplified Layout**: Two-tab interface focusing on core photo-to-3D workflow
 
 ### Audio System
 - **Background Music**: Ambient audio for enhanced user experience
