@@ -1,15 +1,20 @@
 import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
+import { OrbitControls, Stats } from '@react-three/drei';
+import { Camera } from './Camera';
 import { Lighting } from './Lighting';
 import { Grid } from './Grid';
 import { SceneObjects } from './SceneObjects';
+import { TransformControls } from './TransformControls';
+import { useToolStore } from '@/lib/stores/useToolStore';
 
 interface SceneProps {
   className?: string;
 }
 
 export function Scene({ className }: SceneProps) {
+  const { showGrid, showWireframe } = useToolStore();
+
   return (
     <div className={`modeling-viewport ${className || ''}`}>
       <Canvas
@@ -35,8 +40,9 @@ export function Scene({ className }: SceneProps) {
         
         <Suspense fallback={null}>
           <Lighting />
-          <Grid />
-          <SceneObjects wireframe={false} />
+          {showGrid && <Grid />}
+          <SceneObjects wireframe={showWireframe} />
+          <TransformControls />
         </Suspense>
         
         <OrbitControls
@@ -48,6 +54,8 @@ export function Scene({ className }: SceneProps) {
           minDistance={1}
           maxDistance={100}
         />
+        
+        <Stats />
       </Canvas>
     </div>
   );

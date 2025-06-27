@@ -36,6 +36,7 @@ function SceneObjectComponent({ object, wireframe }: SceneObjectComponentProps) 
       visible={object.visible}
       geometry={object.geometry}
       material={object.material}
+      userData={{ id: object.id }}
       castShadow
       receiveShadow
     >
