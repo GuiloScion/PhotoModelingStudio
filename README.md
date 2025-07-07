@@ -21,17 +21,4 @@ An advanced web-based 3D modeling application with photogrammetry capabilities.
 
 ## Live Demo
 
-Deployed on Vercel: [Your live URL will appear here after deployment]
-
-## Local Development
-
-```bash
-npm install
-npm run dev
-```
-
-Open [http://localhost:5000](http://localhost:5000) to view the application.
-
-## Deployment
-
-This project is configured for automatic deployment on Vercel when pushing to the main branch.
+Deployed on Vercel: https://photo-modeling-studioip.vercel.app/ 
