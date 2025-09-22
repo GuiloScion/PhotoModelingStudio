@@ -18,7 +18,3 @@ An advanced web-based 3D modeling application with photogrammetry capabilities.
 - Tailwind CSS + Radix UI
 - Express.js backend
 - PostgreSQL with Drizzle ORM
-
-## Live Demo
-
-Deployed on Vercel: https://photo-modeling-studioip.vercel.app/ 
